@@ -1,0 +1,9 @@
+# Runs mysql, wordpress and composer as non-root user to keep permissions.
+version: '3.6'
+services:
+  mysql:
+    user: '1000'
+  wordpress:
+    user: '1000'
+  composer:
+    user: '1000'
